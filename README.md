@@ -10,9 +10,7 @@ To-Do
 
 -Create JS Data structures
 
--HTML5? use a special JS framework?
-
--Bootstrap or PureCSS?
+-Use a special JS framework?
 
 What is the general idea of what it can do?
 -----
