@@ -8,4 +8,10 @@ $(document).ready(function(){
 		$('#algorithms-list').toggle();
 	});
 
+	$('.menu-option').click(function() {
+		var topic = this.id;
+
+		$('#main-content-container').html(topic);
+	});
+
 });
