@@ -52,8 +52,12 @@ $(document).ready(function(){
 		maincontent.html("QuickSort Content here");
 	}
 
+	function loadMergeSortContent() {
+		maincontent.html("Mergesort content here");
+	}
+
 	function loadAboutContent () {
-		maincontent.html("About content here");
+		maincontent.load("about.html");
 	}
 
 	// =======================================
