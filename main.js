@@ -57,7 +57,7 @@ $(document).ready(function(){
 	}
 
 	function loadAboutContent () {
-		maincontent.load("about.html");
+		maincontent.load("about.html", 'f' + (Math.random()*1000000));
 	}
 
 	// =======================================
