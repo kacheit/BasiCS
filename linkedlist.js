@@ -1,0 +1,1 @@
+/*LinkedList Javascript Functions for BasiCS*/
