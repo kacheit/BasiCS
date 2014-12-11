@@ -6,11 +6,13 @@ BasiCS's aim is to provide an interactive web experience for students to learn c
 To-Do
 -----
 
--Design barebone website
+-Create a working canvas JS interactive playground for LinkedLists that support: append/search/remove operations
 
--Create JS Data structures
 
--Use a special JS framework?
+Technologies
+------
+
+-Bootstrap + HTML5 + Javascript + jQuery
 
 What is the general idea of what it can do?
 -----
