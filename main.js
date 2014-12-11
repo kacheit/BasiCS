@@ -12,6 +12,12 @@ var SELECTION_SORT_OPTION = "selection-sort-option";
 var MERGESORT_OPTION = "mergesort-option";
 var ABOUT_OPTION = "about-option";
 
+// Creds to http://www.ckode.dk/programming/avoiding-caching-with-jquery-load/
+// Load a resource but noncached for change of content
+function nonCachedResource(resPath) {
+	return resPath + '?f' + (Math.random()*1000000);
+}
+
 $(document).ready(function(){
 
 	var maincontent = $('#main-content-container');
@@ -21,44 +27,44 @@ $(document).ready(function(){
     // =======================================
 
 	function loadLinkedListContent() {
-		maincontent.html("LinkedList Content here");
-	}
+		maincontent.load(nonCachedResource("linkedlist.html"))
+	};
 
 	function loadArrayContent() {
 		maincontent.html("Array Content here");
-	}
+	};
 
 	function loadStackContent() {
 		maincontent.html("Stack Content here");
-	}
+	};
 
 	function loadQueueContent() {
 		maincontent.html("Queue Content here");
-	}
+	};
 
 	function loadBinaryTreeContent() {
 		maincontent.html("Array Content here");
-	}
+	};
 	
 	function loadBubbleSortContent() {
 		maincontent.html("Bubblesort Content here");
-	}
+	};
 
 	function loadSelectionSortContent() {
 		maincontent.html("Selection sort content here");
-	}
+	};
 
 	function loadQuickSortContent() {
 		maincontent.html("QuickSort Content here");
-	}
+	};
 
 	function loadMergeSortContent() {
 		maincontent.html("Mergesort content here");
-	}
+	};
 
 	function loadAboutContent () {
-		maincontent.load("about.html", 'f' + (Math.random()*1000000));
-	}
+		maincontent.load(nonCachedResource("about.html"));
+	};
 
 	// =======================================
 
